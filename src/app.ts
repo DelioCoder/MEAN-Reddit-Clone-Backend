@@ -14,7 +14,9 @@ app.set( 'port', config.PORT || 4001 );
 
 //Routes
 import UserPath from './routes/user/user.router';
-
 app.use( '/api/user/', UserPath );
+
+import postPath from './routes/post/post.router';
+app.use( '/api/post/', postPath );
 
 export default app;
